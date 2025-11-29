@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acerca de BTS</title>
+  <link rel="stylesheet" href="estilos.css"> <!-- Tu hoja personalizada -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-dark px-3">
+      <div class="logo">FanPage BTS/ARMY</div>
+      <ul class="nav-links list-unstyled d-flex gap-3 mb-0">
+        <li><a href="index.html" class="text-white">REGRESAR</a></li>
+      </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header class="text-center mt-4">
+      <h1 class="centrado">Acerca de BTS</h1>
+      <p class="lead">Historia, formación e impacto global del grupo surcoreano</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container mt-5">
+      <!-- Historia -->
+      <section class="mb-5">
+        <h2>Historia y Formación</h2>
+        <p>
+          BTS debutó el 13 de junio de 2013 bajo la compañía <strong>Big Hit Entertainment</strong> 
+          (actualmente <strong>HYBE Labels</strong>) con el álbum sencillo <em>2 Cool 4 Skool</em>. 
+          Desde sus inicios, el grupo se destacó por su estilo influenciado por el hip hop y letras 
+          que abordaban temas sociales, juveniles y personales. Con el tiempo, BTS expandió su sonido 
+          hacia géneros como pop, R&B, EDM y baladas, consolidándose como uno de los grupos más 
+          influyentes de la música global.
+        </p>
+      </section>
+
+      <!-- Carrusel -->
+      <section class="mb-5">
+        <h2 class="text-center">Eras y Álbumes Destacados</h2>
+        <div id="btsCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <img src="img/cool.jpeg" class="d-block w-100" alt="2 Cool 4 Skool">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>2 Cool 4 Skool (2013)</h5>
+                <p>Debut oficial con estilo hip hop.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/K9odVlGpoY4')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <img src="img/wings.jpeg" class="d-block w-100" alt="Wings">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Wings (2016)</h5>
+                <p>Exploración de temas personales y artísticos.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/m8MfJg68oCs')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+              <img src="img/your.jpg" class="d-block w-100" alt="Love Yourself: Her">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Love Yourself: Her (2017)</h5>
+                <p>Inicio de la trilogía “Love Yourself”.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/7C2z4GqqS5E')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel-item">
+              <img src="img/map.jpeg" class="d-block w-100" alt="Map of the Soul: Persona">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Map of the Soul: Persona (2019)</h5>
+                <p>Éxito global con “Boy With Luv”.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/jjskoRh8GTE')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel-item">
+              <img src="img/be.jpg" class="d-block w-100" alt="BE">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>BE (2020)</h5>
+                <p>Álbum de esperanza durante la pandemia.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/gdZLi9oWNZg')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel-item">
+              <img src="img/proof.jpg" class="d-block w-100" alt="Proof">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Proof (2022)</h5>
+                <p>Recopilación de su trayectoria musical.</p>
+                <button class="btn btn-light btn-sm" onclick="reproducirVideo('https://www.youtube.com/embed/WMweEpGlu_U')">
+                  ▶ Ver MV
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <!-- Controles -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#btsCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#btsCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </section>
+
+      <!-- Impacto -->
+      <section class="mb-5">
+        <h2>Impacto Cultural</h2>
+        <p>
+          BTS no solo ha transformado la música, sino también la cultura global. Su mensaje 
+          de <strong>autoaceptación</strong> y <strong>esperanza</strong> ha inspirado a millones 
+          de fans alrededor del mundo, conocidos como <strong>ARMY</strong>. Además, han impulsado 
+          el crecimiento del K-pop y han sido embajadores culturales de Corea del Sur.
+        </p>
+      </section>
+    </main>
+
+    <!-- MODAL DE VIDEO -->
+    <div id="video-modal" class="video-modal hidden">
+      <div class="video-content">
+        <button class="close-btn" onclick="cerrarVideo()">✖</button>
+        <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-bts mt-5">
+      <div class="footer-content text-center">
+        <p>&copy; 2025 FanPage BTS/ARMY. HILDA MARIA OROZCO MEZA.</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/bts.bighitofficial" target="_blank">Instagram</a>
+          <a href="https://twitter.com/BTS_twt" target="_blank">Twitter</a>
+          <a href="https://www.youtube.com/user/BANGTANTV" target="_blank">YouTube</a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS para el modal -->
+    <script>
+      function reproducirVideo(url) {
+        const modal = document.getElementById('video-modal');
+        const frame = document.getElementById('video-frame');
+        frame.src = url + '?autoplay=1';
+        modal.classList.remove('hidden');
+      }
+
+      function cerrarVideo() {
+        const modal = document.getElementById('video-modal');
+        const frame = document.getElementById('video-frame');
+        frame.src = '';
+        modal.classList.add('hidden');
+      }
+    </script>
+</body>
+</html>

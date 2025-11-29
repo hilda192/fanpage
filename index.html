@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentación de Cantantes y Canciones</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <!-- NAV -->
+  <header>
+    <nav class="navbar">
+      <span class="logo">FanPage BTS/ARMY</span>
+      <ul class="nav-links">
+        <li><a href="discografia.html">DISCOGRAFIA</a></li>
+        <li><a href="acerca.html">ACERCA DE</a></li>
+         <li><a href="premios.html">PREMIOS</a></li>
+              </ul>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-4">¡¡PAGINA DE ARMY PARA ARMY!!</h1>
+    <hr>
+    <h3>Los miembros de Bangtan Sonyeondan...</h3>
+
+    <!-- SECCIÓN CANTANTES -->
+    <section>
+      <h2 class="text-center mb-4">🎶 Mis Cantantes Favoritos</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        
+        <!-- Ejemplo de card con figure -->
+        <article class="col">
+          <figure class="card bg-bts-lila h-100">
+            <a href="rm.html">
+              <img src="img/RM.jpg" class="card-img-top" alt="Kim Nam-joon">
+            </a>
+            <figcaption class="card-body">
+              <h5 class="card-title">Kim Nam-joon</h5>
+              <p class="card-text">Líder de BTS, conocido por su talento en rap y composición.</p>
+            </figcaption>
+          </figure>
+        </article>
+
+        <!-- Repite para cada miembro -->
+        <article class="col">
+          <figure class="card bg-bts-lila h-100">
+            <a href="suga.html">
+              <img src="img/SUGA.jpg" class="card-img-top" alt="Min Yoon-gi">
+            </a>
+            <figcaption class="card-body">
+              <h5 class="card-title">Min Yoon-gi</h5>
+              <p class="card-text">Rapero y productor.</p>
+            </figcaption>
+          </figure>
+        </article>
+<!-- JIN -->
+<article class="col">
+  <figure class="card bg-bts-lila h-100">
+    <a href="jin.html">
+      <img src="img/JIN.jpg" class="card-img-top" alt="Kim Seok-jin">
+    </a>
+    <figcaption class="card-body">
+      <h5 class="card-title">Kim Seok-jin</h5>
+      <p class="card-text">Vocalista y visual "Worldwide Handsome".</p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- Jungkook -->
+<article class="col">
+  <figure class="card bg-bts-lila h-100">
+    <a href="jk.html">
+      <img src="img/JK.jpg" class="card-img-top" alt="Jeon Jung-kook">
+    </a>
+    <figcaption class="card-body">
+      <h5 class="card-title">Jeon Jung-kook</h5>
+      <p class="card-text">Vocalista principal, Golden Maknae.</p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- Jimin -->
+<article class="col">
+  <figure class="card bg-bts-lila h-100">
+    <a href="jimin.html">
+      <img src="img/JIMIN.jpeg" class="card-img-top" alt="Park Ji-min">
+    </a>
+    <figcaption class="card-body">
+      <h5 class="card-title">Park Ji-min</h5>
+      <p class="card-text">Vocalista y bailarín.</p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- J-Hope -->
+<article class="col">
+  <figure class="card bg-bts-lila h-100">
+    <a href="jh.html">
+      <img src="img/JHOPE.jpg" class="card-img-top" alt="Jung Ho-seok">
+    </a>
+    <figcaption class="card-body">
+      <h5 class="card-title">Jung Ho-seok</h5>
+      <p class="card-text">Rapero y bailarín.</p>
+    </figcaption>
+  </figure>
+</article>
+
+<!-- V -->
+<article class="col">
+  <figure class="card bg-bts-lila h-100">
+    <a href="v.html">
+      <img src="img/V.jpg" class="card-img-top" alt="Kim Tae-hyung">
+    </a>
+    <figcaption class="card-body">
+      <h5 class="card-title">Kim Tae-hyung</h5>
+      <p class="card-text">Vocalista.</p>
+    </figcaption>
+  </figure>
+</article>
+
+        </div>
+    </section>
+
+    <hr class="my-5">
+<!-- nuts -->
+    <section>
+      <h2 class="text-center mb-4">🎵 Mis Canciones Favoritas</h2>
+      <ul class="list-group">
+        <li class="mb-2">
+          <button onclick="toggleMenu('nuts')" class="btn-cancion-lila">Nuts</button>
+          <aside id="menu-nuts" class="song-controls">
+            <button onclick="playSong('nuts')" class="btn-play-lila btn-sm">▶️ Play</button>
+            <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+          </aside>
+        </li>
+<!-- Snooze -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('snooze')" class="btn-cancion-lila">Snooze</button>
+    <aside id="menu-snooze" class="song-controls">
+      <button onclick="playSong('snooze')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+
+  <!-- Don’t say -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('dontsay')" class="btn-cancion-lila">Don’t say</button>
+    <aside id="menu-dontsay" class="song-controls">
+      <button onclick="playSong('dontsay')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+
+  <!-- Who -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('who')" class="btn-cancion-lila">Who</button>
+    <aside id="menu-who" class="song-controls">
+      <button onclick="playSong('who')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+
+  <!-- Hate you -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('hateyou')" class="btn-cancion-lila">Hate you</button>
+    <aside id="menu-hateyou" class="song-controls">
+      <button onclick="playSong('hateyou')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+
+  <!-- Friends -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('friends')" class="btn-cancion-lila">Friends</button>
+    <aside id="menu-friends" class="song-controls">
+      <button onclick="playSong('friends')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+
+  <!-- Sweet dreams -->
+  <li class="mb-2">
+    <button onclick="toggleMenu('sweetdreams')" class="btn-cancion-lila">Sweet dreams</button>
+    <aside id="menu-sweetdreams" class="song-controls">
+      <button onclick="playSong('sweetdreams')" class="btn-play-lila btn-sm">▶️ Play</button>
+      <button onclick="pauseSong()" class="btn-pause-lila btn-sm">⏸️ Pause</button>
+    </aside>
+  </li>
+</ul>
+
+         
+    </section>
+
+    <!-- VIDEO -->
+    <section class="text-center mt-5">
+      <h3 class="mb-4">NO MORE DREAM</h3>
+      <h4 class="mb-4">Bangtan debutó con esta canción...</h4>
+      <video class="img-fluid rounded shadow" controls autoplay muted>
+        <source src="video/nomore.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-bts">
+    <p>&copy; 2025 FanPage BTS/ARMY. HILDA MARIA OROZCO MEZA.</p>
+    <nav class="social-icons">
+      <a href="https://www.instagram.com/bts.bighitofficial" target="_blank">Instagram</a>
+      <a href="https://twitter.com/BTS_twt" target="_blank">Twitter</a>
+      <a href="https://www.youtube.com/user/BANGTANTV" target="_blank">YouTube</a>
+    </nav>
+  </footer>
+
+  <!-- AUDIO -->
+  <audio id="audioPlayer"></audio>
+  <script>
+    const audioPlayer = document.getElementById("audioPlayer");
+    const songs = {
+      nuts: "audio/nuts.mp3",
+      snooze: "audio/snooze.mp3",
+      dontsay: "audio/dontsay.mp3",
+      who: "audio/who.mp3",
+      hateyou: "audio/hateyou.mp3",
+      friends: "audio/friends.mp3",
+      sweetdreams: "audio/sweetdreams.mp3"
+    };
+
+    function toggleMenu(songId) {
+      document.querySelectorAll('.song-controls').forEach(menu => {
+        if (menu.id !== `menu-${songId}`) menu.style.display = 'none';
+      });
+      const menu = document.getElementById(`menu-${songId}`);
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+    function playSong(songId) { audioPlayer.src = songs[songId]; audioPlayer.play(); }
+    function pauseSong() { audioPlayer.pause(); }
+  </script>
+</body>
+</html>

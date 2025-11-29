@@ -1,0 +1,367 @@
+body {
+    background-color: rgb(19, 9, 22); /* Si prefieres tu color personalizado */
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, sans-serif;
+    font-weight: bold;
+}
+
+img {
+    max-width: 400px;
+}
+body {
+   background-image: url('img/logo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(8, 8, 8);
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+  }
+ 
+
+  .navbar {
+    background-color: #6b157e;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+  }
+  
+  .logo {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: rgb(253, 249, 249);
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    background-color: #640a7f;
+    border-radius: 4px;
+  }
+  .centrado {
+    text-align: center;
+  }
+  
+.card {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+  .bg-bts-lila {
+  background-color: #33033f; /* lila suave */
+  color: white;
+}
+
+  .btn-lila {
+  background-color: #d8b4f8;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.btn-lila:hover {
+  background-color: #c084fc;
+  color: white;
+}
+.btn-play-lila {
+  background-color: #a855f7; /* Lila medio */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-play-lila:hover {
+  background-color: #9333ea; /* Lila más oscuro */
+}
+
+.btn-pause-lila {
+  background-color: #7e22ce; /* Lila oscuro */
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-pause-lila:hover {
+  background-color: #6b21a8;
+}
+.btn-cancion-lila {
+  background-color: #7c4fa3; /* Lila oscuro */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cancion-lila:hover {
+  background-color: #33035a;
+}
+
+ body {
+      background-color: #222022;
+      color: rgb(221, 13, 232);
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #e319cf;
+    }
+h3 {
+   text-align: center;
+      color: #db0cf2;
+}
+    .album {
+      background-color: #7e22ce;
+      border-radius: 10px;
+      margin: 1rem auto;
+      padding: 1rem;
+      max-width: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+
+    .album:hover {
+      transform: scale(1.03);
+      background-color: #6b21a8;
+    }
+
+    .album img {
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .album h2 {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .album p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: #e9d5ff;
+    }
+     
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    figure {
+      background-color: #642764;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    figure:hover {
+      background-color: #6b21a8;
+      transform: scale(1.03);
+    }
+
+    figure img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    figcaption {
+      padding: 0.8rem;
+    }
+
+    figcaption h2 {
+      font-size: 1rem;
+      margin: 0.3rem 0;
+      color: white;
+    }
+
+    figcaption p {
+      font-size: 0.85rem;
+      color: #e9d5ff;
+      margin: 0;
+    }
+    .video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(40, 0, 60, 0.85); /* fondo lila translúcido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.video-content {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  background-color: #1a1a1a;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.video-content iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 8px;
+}
+video {
+  display: block;
+  margin: 0 auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #a78bfa; /* lila suave */
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+.footer-bts {
+  background-color: #6b21a8;
+  color: #f3e8ff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  border-top: 2px solid #a78bfa;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #e9d5ff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  margin-top: auto;
+}
+.carousel-inner img {
+  border-radius: 10px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.carrusel-bts {
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.carrusel-track {
+  display: flex;
+  width: calc(550px * 6); /* 6 imágenes de 300px */
+  animation: deslizar 15s linear infinite;
+}
+
+.carrusel-track img {
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* Animación */
+@keyframes deslizar {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

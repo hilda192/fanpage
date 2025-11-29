@@ -1,0 +1,152 @@
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Discografía BTS</title>
+  <link rel="stylesheet" href="estilos.css">
+ 
+</head>
+<body class="bg-dark text-white">
+    <nav class="navbar">
+      <div class="logo">FanPage BTS/ARMY</div>
+      <ul class="nav-links">
+              <li><a href="index.html">REGRESAR</a></li>
+             </ul>
+    </nav>
+<h1 class="centrado"> DISCOGRAFIA </h1>
+
+  <h1>Discografía BTS</h1>
+
+ <section class="grid">
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/K9odVlGpoY4')">
+    <img src="img/cool.jpeg" alt="cool">
+    <figcaption>
+      <h2>2 Cool 4 Skool (2013)</h2>
+      <p>Digital Single - <a href="https://www.youtube.com/watch?v=K9odVlGpoY4" target="_blank">No More Dream</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/MBdVXkSdhwU')">
+    <img src="img/our.jpeg" alt="our">
+    <figcaption>
+      <h2>O!RUL8,2? (2013)</h2>
+      <p>Anthology Album - <a href="https://www.youtube.com/watch?v=MBdVXkSdhwU" target="_blank">N.O</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/dzAwJW107nk')">
+    <img src="img/luv.jpeg" alt="luv">
+    <figcaption>
+      <h2>Skool Luv Affair (2014)</h2>
+      <p>Full Album - <a href="https://www.youtube.com/watch?v=dzAwJW107nk" target="_blank">Boy In Luv</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/89TzQ9Qou7g')">
+    <img src="img/dark.jpg" alt="dark">
+    <figcaption>
+      <h2>Dark & Wild (2014)</h2>
+      <p>Mini Album - <a href="https://www.youtube.com/watch?v=89TzQ9Qou7g" target="_blank">Danger</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/m8MfJg68oCs')">
+    <img src="img/wings.jpeg" alt="wings">
+    <figcaption>
+      <h2>Wings (2016)</h2>
+      <p>Full Album - <a href="https://www.youtube.com/watch?v=m8MfJg68oCs" target="_blank">Blood Sweat & Tears</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/7OX7dIrkQzo')">
+    <img src="img/never.jpg" alt="never">
+    <figcaption>
+      <h2>You Never Walk Alone (2017)</h2>
+      <p>Mini Album - <a href="https://www.youtube.com/watch?v=7OX7dIrkQzo" target="_blank">Spring Day</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/7C2z4GqqS5E')">
+    <img src="img/your.jpg" alt="your">
+    <figcaption>
+      <h2>Love Yourself: Her (2017)</h2>
+      <p>Repackage - <a href="https://www.youtube.com/watch?v=7C2z4GqqS5E" target="_blank">DNA</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/7C2z4GqqS5E')">
+    <img src="img/your2.jpeg" alt="your2">
+    <figcaption>
+      <h2>Love Yourself: Tear (2018)</h2>
+      <p>Digital Single - <a href="https://www.youtube.com/watch?v=7C2z4GqqS5E" target="_blank">Fake Love</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/jjskoRh8GTE')">
+    <img src="img/map.jpeg" alt="map">
+    <figcaption>
+      <h2>Map of the Soul: Persona (2019)</h2>
+      <p>Deluxe Album - <a href="https://www.youtube.com/watch?v=jjskoRh8GTE" target="_blank">Boy With Luv</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/kTlv5_Bs8aw')">
+    <img src="img/soul.jpeg" alt="soul">
+    <figcaption>
+      <h2>Map of the Soul: 7 (2020)</h2>
+      <p>Special Album - <a href="https://www.youtube.com/watch?v=kTlv5_Bs8aw" target="_blank">ON</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/gdZLi9oWNZg')">
+    <img src="img/be.jpg" alt="be">
+    <figcaption>
+      <h2>BE (2020)</h2>
+      <p>Full Album - <a href="https://www.youtube.com/watch?v=gdZLi9oWNZg" target="_blank">Life Goes On</a></p>
+    </figcaption>
+  </figure>
+
+  <figure onclick="reproducirVideo('https://www.youtube.com/embed/WMweEpGlu_U')">
+    <img src="img/proof.jpg" alt="proof">
+    <figcaption>
+      <h2>Proof (2022)</h2>
+      <p>Anthology Album - <a href="https://www.youtube.com/watch?v=WMweEpGlu_U" target="_blank">Yet To Come</a></p>
+    </figcaption>
+  </figure>
+</section>
+<div id="video-modal" class="video-modal hidden">
+  <div class="video-content">
+    <button class="close-btn" onclick="cerrarVideo()">✖</button>
+    <iframe id="video-frame" src="" frameborder="0" allowfullscreen></iframe>
+  </div>
+</div>
+<script>
+  function reproducirVideo(url) {
+    const modal = document.getElementById('video-modal');
+    const frame = document.getElementById('video-frame');
+    frame.src = url + '?autoplay=1';
+    modal.classList.remove('hidden');
+  }
+
+  function cerrarVideo() {
+    const modal = document.getElementById('video-modal');
+    const frame = document.getElementById('video-frame');
+    frame.src = '';
+    modal.classList.add('hidden');
+  }
+</script>
+<footer class="footer-bts">
+  <div class="footer-content">
+    <p>&copy; 2025 FanPage BTS/ARMY. HILDA MARIA OROZCO MEZA.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/bts.bighitofficial" target="_blank">Instagram</a>
+      <a href="https://twitter.com/BTS_twt" target="_blank">Twitter</a>
+      <a href="https://www.youtube.com/user/BANGTANTV" target="_blank">YouTube</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
